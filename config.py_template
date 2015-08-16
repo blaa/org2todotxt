@@ -1,0 +1,45 @@
+"Edit this file to get what you need"
+
+##
+# Config
+agenda_files = [
+    "life",
+    "tasks",
+    "notes",
+    "inbox",
+    "work",
+]
+
+base = "/home/USER/.org/"
+
+# Order of todos suggests priority (for the same ABC priorities and due dates)
+todos = ["NEXT", "TODO", "DELEGATED", "DEFERRED", "DONE", "CANCELLED", "PROJECT"]
+
+# Those are not included in output:
+todos_done = ["DONE", "CANCELLED", "DEFERRED"]
+
+# Warning: In org-mode this is 'B', but it gets differently sorted in todotxt.
+default_priority = 'D'
+
+# Any tags on projects are inherited by subtrees
+project_todo = "PROJECT"
+
+# Tags on files are treated as projects:
+# #+FILETAGS: LIFE
+# * Feed your dog
+# * Feed your cat
+use_filetags_as_projects = True
+
+# Entry with project_todo and 1-word headline are projects:
+# * PROJECT LIFE
+# ** Feed your dog
+# ** Feed your cat
+use_short_headlines_as_projects = True
+
+# Tags on entries with todo=project_todo are treated as projects:
+# * PROJECT This is my life :LIFE:
+# ** Feed your dog
+# ** Feed your cat
+use_tags_as_projects = True
+
+
